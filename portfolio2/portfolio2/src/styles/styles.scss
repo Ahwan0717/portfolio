@@ -3,12 +3,13 @@ $font: "Helvetica Neue", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
 //colors variables
 $white: #fff;
 $black:#000;
-$maroon: #800000; 
-$olive: 	#808000;
+$skyBlue: #87ceeb;
+$red: red;
+
 
 html, body {
     font-family: $font;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .container {
@@ -64,6 +65,54 @@ header {
                     }
                 }
             }
+        }
+    }
+}
+
+//banner
+
+.banner {
+    display: flex;
+    align-items: center;
+    background-color: $white;
+    position: relative;
+    height: 100vh;
+    .row {
+        position: relative;
+        .main-text {
+            font-size: 5.8rem;
+            text-transform: uppercase;
+            letter-spacing: 42px;
+            font-weight: 700;
+            color: $skyBlue;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            z-index: 9;
+
+            @media (max-width: 1440px){
+                font-size: 4.4rem;
+                letter-spacing: 36px;
+            }
+        }
+
+        //add more media queries to make this responsive
+        .main-image {
+
+background-repeat:no-repeat;
+background-size:contain;
+background-position:center;
+background-attachment: fixed;
+
+            // width: 536px;
+            // margin: 0 auto;
+
+            // @media (max-width: 1440px){
+            //     width: 720px;
+            // }
         }
     }
 }
