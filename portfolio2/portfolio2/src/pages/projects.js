@@ -1,21 +1,26 @@
 import React from "react"
 import Header from '../components/header'
+// import { CardGroup, Card } from 'react-bootstrap'
 
-class Projects extends React.Component {
-    constructor(props) {
-        super(props)
-    }
 
-    render() {
-        return (
-            <div>
-                <Header />
-                <div>
-                    {/* <h1>CONTACT ME</h1> */}
-                </div>
-            </div>
-        )
-    }
+function Projects() {
+    return (
+        <div className='projects-container'>
+            <Header />
+            <h1 className='title'>Projects</h1>
+            {/* <CardGroup>
+                <Card>
+                    <Card.Img variant='top' src='' />
+                    <Card.Body>
+                        <Card.Text>
+                            Project 1
+                            </Card.Text>
+                    </Card.Body>
+                </Card>
+            </CardGroup> */}
+        </div>
+    )
+
 }
 
 export default Projects;

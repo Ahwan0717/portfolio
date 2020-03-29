@@ -1,5 +1,7 @@
 import React from "react"
 import { Link } from 'gatsby'
+// import Scroll from 'react-scroll'
+import About from "../pages/about"
 
 const Header = () => (
     <header>
@@ -10,7 +12,7 @@ const Header = () => (
                 </div>
                 <div className='navigation'>
                     <nav>
-                        <Link to='/about'>About Me!</Link>
+                        <Link to='/about' component={About}>About Me</Link>
                         <Link to='/projects'>Projects</Link>
                         <Link to='/contact'>Contact</Link>
                     </nav>
