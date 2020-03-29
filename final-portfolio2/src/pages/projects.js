@@ -1,39 +1,53 @@
 import React from "react"
 import Header from '../components/header'
-import { CardGroup, Card } from 'react-bootstrap'
+import { CardDeck, Card } from 'react-bootstrap'
+import harmonious from '../images/harmonious.png'
+import abiliteas from '../images/abiliteas.png'
+import videogamelibrary from '../images/videogamelibrary.png'
 
 
 function Projects() {
     return (
-        <div className='projects-container'>
+        <div>
             <Header />
             <h1 className='title'>Projects</h1>
-            <CardGroup>
-                <Card>
-                    <Card.Img variant='top' src='' />
+            {/* <CardDeck className='card-deck'> */}
+            <div className='projects-container'>
+                <Card style={{ width: '18rem' }}>
+                    <Card.Img className='card-img' variant='top' src={harmonious} />
                     <Card.Body>
+                        <Card.Title>Harmonious</Card.Title>
                         <Card.Text>
-                            Project 1
-                            </Card.Text>
+                            A progressive web app that streamlines the booking process between an artist and a booker.
+                        </Card.Text>
+                        <Card.Link href="#">Visit</Card.Link>
+                        <Card.Link href="#">Github</Card.Link>
                     </Card.Body>
                 </Card>
-                <Card>
-                    <Card.Img variant='top' src='' />
+                <Card className='card'>
+                    <Card.Img className='card-img' variant='top' src={abiliteas} />
                     <Card.Body>
+                        <Card.Title>Abiliteas</Card.Title>
                         <Card.Text>
-                            Project 2
-                            </Card.Text>
+                            An e-commerce web application that allows guests and logged-in users to purchase teas that provide superpowers.
+                        </Card.Text>
+                        <Card.Link href="#">Visit</Card.Link>
+                        <Card.Link href="#">Github</Card.Link>
                     </Card.Body>
                 </Card>
-                <Card>
-                    <Card.Img variant='top' src='' />
+                <Card className='card'>
+                    <Card.Img className='card-img' variant='top' src={videogamelibrary} />
                     <Card.Body>
+                        <Card.Title>Video Game Music Library</Card.Title>
                         <Card.Text>
-                            Project 1
+                            A single-page application created in 5 days featuring a library of video game artists' top tracks using the Spotify API.
                             </Card.Text>
+                        <Card.Link href="#">Visit</Card.Link>
+                        <Card.Link href="#">Github</Card.Link>
                     </Card.Body>
                 </Card>
-            </CardGroup>
+                {/* </CardDeck> */}
+            </div>
         </div>
     )
 
