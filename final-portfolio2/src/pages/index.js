@@ -7,7 +7,7 @@ import Projects from './projects'
 import Experience from './experience'
 
 const IndexPage = () => (
-  <div>
+  <div id="home">
     <Header />
     <Banner />
     <div>

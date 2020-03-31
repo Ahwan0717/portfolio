@@ -1,6 +1,6 @@
 import React from "react"
-import { Link } from 'gatsby'
-import About from "../pages/about"
+import { Link } from "react-scroll";
+// import About from "../pages/about"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -14,14 +14,48 @@ const Header = () => {
       <div className='container'>
         <div className='inner-header'>
           <div className='logo'>
-            <Link to='/'>Ariana Hwang</Link>
+            <Link activeClass="active"
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Ariana Hwang
+                </Link>
           </div>
           <div className='navigation'>
             <div data-aos="zoom-in">
               <nav>
-                <Link to='/about'>About Me</Link>
-                <Link to='/projects'>Projects</Link>
-                <Link to='/experience'>Experience</Link>
+                <Link activeClass="active"
+                  to="projects"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  Projects
+                </Link>
+
+                <Link activeClass="active"
+                  to="experience"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  Experience
+                </Link>
+
+                <Link activeClass="active"
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  About Me
+                </Link>
               </nav>
             </div>
           </div>

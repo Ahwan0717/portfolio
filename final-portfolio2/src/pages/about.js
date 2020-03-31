@@ -6,6 +6,8 @@ import github from '../images/githublogo.png'
 import mail from '../images/mail.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Interests from '../components/interests'
+import resume from '../images/resume.pdf'
 
 function About() {
 
@@ -14,7 +16,7 @@ function About() {
     });
 
     return (
-        <div>
+        <div id="about">
             <Header />
             <div className="about-container">
                 <div className="item" data-aos="zoom-in">
@@ -39,11 +41,19 @@ function About() {
                             <a href="mailto:ajhwang0717@gmail.com" target="_blank" rel="noopener noreferrer">
                                 <img className='mail' src={mail} alt="email" />
                             </a>
+                            <button className="button">
+                                <a href={resume} download>
+                                    Download Resume
+                                </a>
+                            </button>
                         </div>
+                        <h3 className="interests-title">Interests</h3>
                     </div>
                 </div>
             </div>
+            <Interests />
         </div>
+
     )
 
 }

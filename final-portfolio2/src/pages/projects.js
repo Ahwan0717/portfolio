@@ -15,18 +15,13 @@ function Projects() {
     });
 
     return (
-        <div>
+        <div id='projects'>
             <Header />
             <h1 className='title'>Projects</h1>
             <div className='projects-container'>
                 <div className="item" data-aos="fade-up">
                     <Card className='card'>
-                        {/* <div className="container"> */}
                         <Card.Img className='card-img' variant='top' src={harmonious} />
-                        {/* <div className="middle">
-                            <div className="text">John Doe</div>
-                        </div>
-                    </div> */}
                         <Card.Body>
                             <Card.Title>Harmonious</Card.Title>
                             <Card.Text>

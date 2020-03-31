@@ -105,26 +105,11 @@ header {
                 letter-spacing: 36px;
             }
         }
-
-        //add more media queries to make this responsive
-        .main-image {
-
-background-repeat:no-repeat;
-background-size:contain;
-background-position:center;
-background-attachment: fixed;
-
-            // width: 536px;
-            // margin: 0 auto;
-
-            // @media (max-width: 1440px){
-            //     width: 720px;
-            // }
-        }
     }
 }
 
 //about
+
 .about-container {
     display: flex;
     flex-direction: row;
@@ -135,9 +120,7 @@ background-attachment: fixed;
 
 .ariana-pic{
     display: flex;
-    // margin-top: 75px;
     margin-left: 10px;
-    // margin-right: auto;
     width: 350px;
     height: 350px;
     border-radius: 50%;
@@ -149,25 +132,12 @@ background-attachment: fixed;
 
     p {
         display: block;
-        // margin-block-start: 1.33em;
-        // margin-block-end: 1.33em;
-        // margin-inline-start: 0px;
-        // margin-inline-end: 0px;
     }
 
     h3 {
         display: block;
-        // margin-block-start: 1.33em;
-        // margin-block-end: 1.33em;
-        // margin-inline-start: 0px;
-        // margin-inline-end: 0px;
     }
 }
-
-// .contact {
-    
-// }
-
 
 .linkedin{
     width: 50px;
@@ -184,7 +154,17 @@ background-attachment: fixed;
     height: 50px;
 }
 
+.interests-title{
+    display: flex;
+    margin-top: 30px;
+}
+
+.button{
+    margin-left: 10px;
+}
+
 //projects
+
 .title{
     display: flex;
     margin-top: 75px;
@@ -212,3 +192,20 @@ background-attachment: fixed;
 }
 
 //experience
+
+
+//interests
+.interests-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 300px;
+    margin-left: 60px;
+    img {
+        display: flex;
+        flex-direction: row;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        padding: 10px
+    }
+}

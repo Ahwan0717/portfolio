@@ -7,7 +7,7 @@ import { FaGraduationCap, FaBriefcase } from 'react-icons/fa';
 function Experience() {
 
     return (
-        <div className='experience-container'>
+        <div className='experience-container' id='experience'>
             <Header />
             <h3 className='title'>Experience</h3>
 
@@ -35,14 +35,9 @@ function Experience() {
                 >
                     <h3 className="vertical-timeline-element-title">Founder, Content Manager, Event Producer</h3>
                     <h4 className="vertical-timeline-element-subtitle">Lullavie</h4>
-                    {/* <p>
-                        <ul>
-                            <li>Created branded content and develop content strategy for site in a multimedia format: podcasts, videos, and blog posts.</li>
-                            <li>Amassed 10,703 unique visitors in 2017. Quadrupled the amount of unique visitors and visits in less than 3 years, and grew total hits 10x - resulting in a total of 415,618 hits in 2018.</li>
-                            <li>Organized Launch Party & Showcase event with 5.5k impressions on Facebook & brought revenue to music venue, Muchmore’s.</li>
-                            <li>Organized two benefit concerts and raised over a thousand dollars through ticket sales & merch directed towards sending clean water to Flint, Michigan and building a school for girls in India. Accumulated 13k & 10k impressions on Facebook & brought revenue to Brooklyn Bazaar & Tilt.</li>
-                        </ul>
-                    </p> */}
+                    <p>
+                        <a href='http://www.lullavie.com/' target="_blank">Lullavie.com</a>
+                    </p>
                 </VerticalTimelineElement>
 
 
