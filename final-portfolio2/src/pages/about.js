@@ -29,18 +29,18 @@ function About() {
                         <p>JavaScript, ReactJS, Redux, Ionic, HTML, CSS, Sass, Material-UI</p>
                         <h3>Back-End</h3>
                         <p>NodeJS, Express, PostgreSQL</p>
+                        <div className='contact'>
+                            <a href='https://www.linkedin.com/in/ariana-hwang-892a59ba' target="_blank" >
+                                <img className='linkedin' src={linkedin} alt="linkedin" />
+                            </a>
+                            <a href='https://github.com/Ahwan0717' target="_blank" >
+                                <img className='github' src={github} alt="github" />
+                            </a>
+                            <a href="mailto:ajhwang0717@gmail.com" target="_blank" rel="noopener noreferrer">
+                                <img className='mail' src={mail} alt="email" />
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div className='contact'>
-                    <a href='https://www.linkedin.com/in/ariana-hwang-892a59ba' target="_blank" >
-                        <img className='linkedin' src={linkedin} alt="linkedin" />
-                    </a>
-                    <a href='https://github.com/Ahwan0717' target="_blank" >
-                        <img className='github' src={github} alt="github" />
-                    </a>
-                    <a href="mailto:ajhwang0717@gmail.com" target="_blank" rel="noopener noreferrer">
-                        <img className='mail' src={mail} alt="email" />
-                    </a>
                 </div>
             </div>
         </div>

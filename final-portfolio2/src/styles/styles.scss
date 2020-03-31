@@ -13,6 +13,9 @@ $red: red;
 html, body {
     font-family: $font;
     font-size: 20px;
+    background-image: url(https://i.stack.imgur.com/xgNnW.jpg); 
+    background-repeat:no-repeat;
+    background-size: cover;
 }
 
 .container {
@@ -51,7 +54,7 @@ header {
                 font-weight: 700;
                 text-decoration: none;
                 letter-spacing: 1.5px;
-                color: $black;
+                color: $white;
             }
         }
         .navigation{
@@ -62,7 +65,7 @@ header {
                     letter-spacing: 1.75px;
                     text-transform: uppercase;
                     font-size: 0.75rem;
-                    color: $black;
+                    color: $white;
                     &:last-child {
                         margin-right: 0px;
                     }
@@ -77,7 +80,7 @@ header {
 .banner {
     display: flex;
     align-items: center;
-    background-color: $white;
+    background-color: black;
     position: relative;
     height: 100vh;
     .row {
@@ -87,10 +90,11 @@ header {
             text-transform: uppercase;
             letter-spacing: 42px;
             font-weight: 700;
-            color: $skyBlue;
+            color: #ff0dbf;
             position: absolute;
             width: 100%;
             left: 0;
+            margin-left: 350px;
             top: 50%;
             transform: translateY(-50%);
             text-align: center;
@@ -123,7 +127,7 @@ background-attachment: fixed;
 //about
 .about-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     height: 50vh;
     margin-left: 150px;
     margin-right: 400px;
@@ -131,17 +135,39 @@ background-attachment: fixed;
 
 .ariana-pic{
     display: flex;
-    margin-top: 75px;
-    margin-left: auto;
-    margin-right: auto;
+    // margin-top: 75px;
+    margin-left: 10px;
+    // margin-right: auto;
     width: 350px;
     height: 350px;
     border-radius: 50%;
+    padding: 40px
 }
 
 .bio {
     font-family: 'Open Sans', sans-serif;
+
+    p {
+        display: block;
+        // margin-block-start: 1.33em;
+        // margin-block-end: 1.33em;
+        // margin-inline-start: 0px;
+        // margin-inline-end: 0px;
+    }
+
+    h3 {
+        display: block;
+        // margin-block-start: 1.33em;
+        // margin-block-end: 1.33em;
+        // margin-inline-start: 0px;
+        // margin-inline-end: 0px;
+    }
 }
+
+// .contact {
+    
+// }
+
 
 .linkedin{
     width: 50px;
@@ -165,6 +191,7 @@ background-attachment: fixed;
     margin-left: 75px;
     margin-right: auto;
     font-family: 'Open Sans', sans-serif;
+    color: $white;
 }
 
 .projects-container{
