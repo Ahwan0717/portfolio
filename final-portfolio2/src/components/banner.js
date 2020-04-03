@@ -25,6 +25,7 @@ const Banner = () => {
                             number: {
                                 value: 200,
                                 density: {
+                                    density_auto: true,
                                     enable: true,
                                     value_area: 1000,
                                 }

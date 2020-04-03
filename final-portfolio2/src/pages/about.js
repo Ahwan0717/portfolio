@@ -17,7 +17,6 @@ function About() {
 
     return (
         <div id="about">
-            <Header />
             <div className="about-container">
                 <div className="item" data-aos="zoom-in">
                     <div className='image-container'>
@@ -26,7 +25,9 @@ function About() {
                 </div>
                 <div data-aos="fade-right">
                     <div className='bio'>
-                        <p>My name is Ariana Hwang. I'm a fullstack software engineer based in Long Island, New York. I graduated from CUNY Baruch College in May 2018 with a bachelor's degree in Digital Marketing and minor in Journalism.</p>
+                        <p> Hi, I’m Ariana. Before I began my journey into software engineering, I was working in a sales and marketing position for a food startup shortly after graduating from Baruch College with a Bachelor’s degree in Digital Marketing. I have also held several marketing internships and jobs in the music industry. </p>
+                        <p>I wanted to shift careers because I realized I wanted to make a positive impact on people’s lives by building out applications rather than selling them. After creating my own music and culture blog and taking a web design course in college, I knew I wanted to fuse my passion for tech, business, and music. </p>
+                        <p>Because I understand digital marketing principles and can put myself in the shoes of a user, I think I could contribute a lot to a software engineering team creatively and analytically from a digital marketing perspective. I am looking to work as a front-end or fullstack software engineer in a collaborative environment, helping a company’s vision come to life.</p>
                         <h3>Front-End</h3>
                         <p>JavaScript, ReactJS, Redux, Ionic, HTML, CSS, Sass, Material-UI</p>
                         <h3>Back-End</h3>
@@ -48,10 +49,11 @@ function About() {
                             </button>
                         </div>
                         <h3 className="interests-title">Interests</h3>
+                        <Interests />
                     </div>
                 </div>
             </div>
-            <Interests />
+            {/* <Interests /> */}
         </div>
 
     )
