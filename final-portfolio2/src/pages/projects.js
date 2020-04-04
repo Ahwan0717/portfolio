@@ -4,6 +4,7 @@ import { Card } from 'react-bootstrap'
 import harmonious from '../images/harmonious.png'
 import abiliteas from '../images/abiliteas.png'
 import videogamelibrary from '../images/videogamelibrary.png'
+import coronatracker from '../images/coronatracker.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -55,6 +56,19 @@ function Projects() {
                             </Card.Text>
                             <Card.Link href="http://videogame-library.herokuapp.com/" target="_blank">Visit</Card.Link>
                             <Card.Link href="https://github.com/Ahwan0717/stackathon_project" target="_blank">Github</Card.Link>
+                        </Card.Body>
+                    </Card>
+                </div>
+                <div className="item" data-aos="fade-up">
+                    <Card className='card'>
+                        <Card.Img className='card-img' variant='top' src={coronatracker} />
+                        <Card.Body>
+                            <Card.Title>CoronaTracker</Card.Title>
+                            <Card.Text>
+                                An open source project called CoronaTracker that is focused on educating the public on COVID-19. I joined a global team of developers and created the map component using react hooks and was the first developer to implement declarative routing with react router. Placed 20th place in CodeVsCovid19 hackathon.
+                            </Card.Text>
+                            <Card.Link href="http://coronatrackerv1.s3-website-us-east-1.amazonaws.com/" target="_blank">Visit</Card.Link>
+                            <Card.Link href="https://github.com/COVID-19-electronic-health-system/Corona-tracker" target="_blank">Github</Card.Link>
                         </Card.Body>
                     </Card>
                 </div>

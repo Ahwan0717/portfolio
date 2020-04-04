@@ -54,7 +54,7 @@ const Header = () => {
                   offset={-70}
                   duration={500}
                 >
-                  About Me
+                  About
                 </Link>
               </nav>
             </div>
