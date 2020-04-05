@@ -3,7 +3,6 @@ import me from '../images/me.png'
 import linkedin from '../images/linkedinlogo.png'
 import github from '../images/githublogo.png'
 import mail from '../images/mail.png'
-// import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Interests from '../components/interests'
 import resume from '../images/resume.pdf'
@@ -11,11 +10,6 @@ import resume from '../images/resume.pdf'
 function About() {
     let AOS;
     useEffect(() => {
-        // if (typeof window === 'undefined' || !window.document) {
-        //     AOS.init({
-        //         duration: 1200,
-        //     });
-        // }
         const AOS = require("aos");
         AOS.init({
             once: true,
@@ -28,9 +22,6 @@ function About() {
         }
     });
 
-    // AOS.init({
-    //     duration: 1200,
-    // });
     return (
         <div id="about">
             <div className="about-container">

@@ -1,16 +1,10 @@
 import React, { useEffect } from "react"
-// import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Particles from 'react-particles-js';
 
 const Banner = () => {
     let AOS;
     useEffect(() => {
-        // if (typeof window === 'undefined' || !window.document) {
-        //     AOS.init({
-        //         duration: 1200,
-        //     });
-        // }
         const AOS = require("aos");
         AOS.init({
             once: true,
