@@ -1,16 +1,26 @@
 import React, { useEffect } from "react"
 import { Link } from "react-scroll";
-import AOS from 'aos';
+// import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Header = () => {
+  let AOS;
   useEffect(() => {
-    if (typeof window === 'undefined' || !window.document) {
-      return;
-    }
+    // if (typeof window === 'undefined' || !window.document) {
+    //     AOS.init({
+    //         duration: 1200,
+    //     });
+    // }
+    const AOS = require("aos");
+    AOS.init({
+      once: true,
+    });
   }, []);
-  AOS.init({
-    duration: 1200,
+
+  useEffect(() => {
+    if (AOS) {
+      AOS.refresh();
+    }
   });
   return (
     <header>

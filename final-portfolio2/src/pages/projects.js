@@ -5,18 +5,28 @@ import harmonious from '../images/harmonious.png'
 import abiliteas from '../images/abiliteas.png'
 import videogamelibrary from '../images/videogamelibrary.png'
 import coronatracker from '../images/coronatracker.png'
-import AOS from 'aos';
+// import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 
 function Projects() {
+    let AOS;
     useEffect(() => {
-        if (typeof window === 'undefined' || !window.document) {
-            return;
-        }
+        // if (typeof window === 'undefined' || !window.document) {
+        //     AOS.init({
+        //         duration: 1200,
+        //     });
+        // }
+        const AOS = require("aos");
+        AOS.init({
+            once: true,
+        });
     }, []);
-    AOS.init({
-        duration: 1200,
+
+    useEffect(() => {
+        if (AOS) {
+            AOS.refresh();
+        }
     });
 
     return (

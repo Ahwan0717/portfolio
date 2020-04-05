@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import '../styles/styles.scss'
 import Header from '../components/header'
 import Banner from '../components/banner'
@@ -7,11 +7,7 @@ import Projects from './projects'
 import Experience from './experience'
 
 const IndexPage = () => {
-  useEffect(() => {
-    if (typeof window === 'undefined' || !window.document) {
-      return;
-    }
-  }, []);
+
   return (
     <div id="home">
       <Header />

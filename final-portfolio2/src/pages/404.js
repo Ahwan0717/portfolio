@@ -1,12 +1,8 @@
-import React, { useEffect } from "react"
+import React from "react"
 
 
 const NotFoundPage = () => {
-  useEffect(() => {
-    if (typeof window === 'undefined' || !window.document) {
-      return;
-    }
-  }, []);
+
   return (
     <div>
       <p>PAGE NOT FOUND!</p>
