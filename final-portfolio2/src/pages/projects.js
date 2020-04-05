@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Header from '../components/header'
 import { Card } from 'react-bootstrap'
 import harmonious from '../images/harmonious.png'
@@ -10,7 +10,11 @@ import 'aos/dist/aos.css';
 
 
 function Projects() {
-
+    useEffect(() => {
+        if (typeof window === 'undefined' || !window.document) {
+            return;
+        }
+    }, []);
     AOS.init({
         duration: 1200,
     });

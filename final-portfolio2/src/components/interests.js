@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useEffect } from "react"
 import livemusic from '../images/livemusic.png'
 import dj from '../images/dj.png'
 import videogame from '../images/videogame.png'
 import anime from '../images/cowboybebop.jpg'
 
 const Interests = () => {
-
+    useEffect(() => {
+        if (typeof window === 'undefined' || !window.document) {
+            return;
+        }
+    }, []);
     return (
         <div>
             <div className='interests-container'>

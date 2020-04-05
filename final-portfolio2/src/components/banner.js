@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from "react"
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import AOS from 'aos';
@@ -6,6 +6,11 @@ import 'aos/dist/aos.css';
 import Particles from 'react-particles-js';
 
 const Banner = () => {
+    useEffect(() => {
+        if (typeof window === 'undefined' || !window.document) {
+            return;
+        }
+    }, []);
 
     AOS.init({
         duration: 1200,

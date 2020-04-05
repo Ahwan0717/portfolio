@@ -1,11 +1,14 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { Link } from "react-scroll";
-// import About from "../pages/about"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Header = () => {
-
+  useEffect(() => {
+    if (typeof window === 'undefined' || !window.document) {
+      return;
+    }
+  }, []);
   AOS.init({
     duration: 1200,
   });

@@ -1,11 +1,18 @@
-import React from "react"
+import React, { useEffect } from "react"
 
 
-const NotFoundPage = () => (
-  <div>
-    <p>PAGE NOT FOUND!</p>
-  </div>
+const NotFoundPage = () => {
+  useEffect(() => {
+    if (typeof window === 'undefined' || !window.document) {
+      return;
+    }
+  }, []);
+  return (
+    <div>
+      <p>PAGE NOT FOUND!</p>
+    </div>
 
-)
+  )
+}
 
 export default NotFoundPage

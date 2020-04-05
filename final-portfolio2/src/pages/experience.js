@@ -1,11 +1,15 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Header from '../components/header'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { FaGraduationCap, FaBriefcase } from 'react-icons/fa';
 
 function Experience() {
-
+    useEffect(() => {
+        if (typeof window === 'undefined' || !window.document) {
+            return;
+        }
+    }, []);
     return (
         <div className='experience-container' id='experience'>
             <Header />
