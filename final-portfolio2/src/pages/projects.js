@@ -5,6 +5,7 @@ import harmonious from '../images/harmonious.png'
 import abiliteas from '../images/abiliteas.png'
 import videogamelibrary from '../images/videogamelibrary.png'
 import coronatracker from '../images/coronatracker.png'
+import emblems from '../images/emblems.png'
 import 'aos/dist/aos.css';
 
 
@@ -77,6 +78,17 @@ function Projects() {
                             </Card.Text>
                             <Card.Link href="http://coronatrackerv1.s3-website-us-east-1.amazonaws.com/" target="_blank">Visit</Card.Link>
                             <Card.Link href="https://github.com/COVID-19-electronic-health-system/Corona-tracker" target="_blank">Github</Card.Link>
+                        </Card.Body>
+                    </Card>
+                </div>
+                <div className="item" data-aos="fade-up">
+                    <Card className='card'>
+                        <Card.Img className='card-img' variant='top' src={emblems} />
+                        <Card.Body>
+                            <Card.Title>Emblems</Card.Title>
+                            <Card.Text>
+                                An educational web application that focuses on engaging underrepresented students in STEM topics
+                            </Card.Text>
                         </Card.Body>
                     </Card>
                 </div>

@@ -11,6 +11,16 @@ function Experience() {
             <h3 className='title'>Experience</h3>
 
             <VerticalTimeline>
+                <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
+                    date="Jun 2020 - Present"
+                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                    icon={<FaBriefcase />}
+                >
+                    <h3 className="vertical-timeline-element-title">Software Engineer Intern</h3>
+                    <h4 className="vertical-timeline-element-subtitle">STEMHIVE</h4>
+
+                </VerticalTimelineElement>
 
                 <VerticalTimelineElement
                     className="vertical-timeline-element--education"
@@ -20,8 +30,7 @@ function Experience() {
                 >
                     <h3 className="vertical-timeline-element-title">Software Engineer Student</h3>
                     <h4 className="vertical-timeline-element-subtitle">Grace Hopper Program, Fullstack Academy</h4>
-                    {/* <p>
-                    </p> */}
+
                 </VerticalTimelineElement>
 
                 <VerticalTimelineElement
@@ -70,8 +79,7 @@ function Experience() {
                 >
                     <h3 className="vertical-timeline-element-title">Clubs & Theatres Division Marketing Intern</h3>
                     <h4 className="vertical-timeline-element-subtitle">Live Nation</h4>
-                    {/* <p>
-                     </p> */}
+
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
